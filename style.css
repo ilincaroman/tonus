@@ -1,8 +1,8 @@
 /* General Styles*/
 
-html *
-{
+html * {
    font-family: Helvetica, Arial;
+   box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5 {
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1{
-	font-size: 10em;
+	/*font-size: 10em;*/
 	color: white;
 	text-transform: lowercase;
 }
@@ -36,7 +36,6 @@ body{
 	background-image: url('http://68.media.tumblr.com/abc19ca98402f00ae7d006d6641691ef/tumblr_oi6s4uQrnN1r6xg0co1_1280.png');
 	background-size: cover;
 	display: flex;
-	flex-direction: row-reverse;
 	padding: 100px 100px 0 100px;
 }
 
@@ -51,13 +50,15 @@ body{
 }
 
 .tonus-entry {
-	width: 35%;
-	float: right;
-	margin: 0 100px 0 0;
+	flex-grow: 1;
+	flex-shrink: 3;
+	/*margin: 0 100px 0 0;*/
 }
 
 .player {
-	width: 35%;
+	order: -1;
+	flex-shrink: 4;
+	width: 50%;
 	background-color:white;
 	padding: 60px;
 	margin: 0 100px 0 0;
@@ -102,8 +103,8 @@ form{
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-
   border-bottom: 5px solid black;
+  margin-bottom: 10px;
 }
 
 .arrow-down {
@@ -112,6 +113,7 @@ form{
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid grey;
+  margin-top: 10px;
 }
 
 /*.play-button {
@@ -123,9 +125,10 @@ form{
 
 .rating {
 	margin: 0;
-	float:left;
-	align-content: center;
+	display: flex;
+	flex-direction: column;
 	margin-right:20px;
+	align-items: center;
 }
 
 .thumbnail iframe{
@@ -198,18 +201,59 @@ form{
 
 /* Profile Style */
 
+.user-data{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+
+}
 .profile-picture img{
 	width: 100px;
 	box-shadow: 10px 10px 10px #f6f6f6;
+	border-style: solid;
+	border-width: 3px;
+	border-color: pink;
 	border-radius: 100px;
+	margin-bottom: 20px;
+}
+
+.username{
+	margin-bottom: 10px;
 }
 
 .location{
 	font-size: 12px;
 	color:#A4A4A4;
+	margin-bottom: 4px;
 }
 
 .disable-location{
 	font-size: 12px;
 	color: pink;
+}
+
+/*Media Queries FTW*/
+
+@media only screen and (max-width: 899px) {
+    /* For mobile phones: */
+    body{
+    	flex-direction: column-reverse;
+    	padding: 0 40px;
+    }
+
+    .player{
+    	width: 100%;
+    	max-width: 600px;
+    	margin:0 auto;
+    	min-width: 250px;
+    }
+
+    .tonus-entry{
+    	width: 100%;
+    	max-width: 600px;
+    	margin: 0 auto;
+    	margin-top: 64px;
+    	margin-bottom: 46px;
+    }
 }
