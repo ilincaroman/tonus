@@ -1,0 +1,138 @@
+/* General Styles*/
+
+html *
+{
+   font-family: Helvetica, Arial;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Nevis, Helvetica, Arial;
+	margin:0;
+}
+
+h1{
+	font-size: 10em;
+	color: white;
+}
+
+h2{
+	font-size:1em;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: white;
+}
+p{
+	font-family: Helvetica, Arial;
+}
+
+body{
+	background-image: url('http://68.media.tumblr.com/abc19ca98402f00ae7d006d6641691ef/tumblr_oi6s4uQrnN1r6xg0co1_1280.png');
+	display: inline;
+	padding: 0 100px 0 100px;
+}
+
+
+.facebook-login{
+	background-color: blue;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	color: white;
+	width: 300px;
+	padding: 20px 50px 20px 50px;
+}
+
+.tonus-entry {
+	width: 35%;
+	float: right;
+	margin: 0 100px 0 0;
+}
+
+.player {
+	width: 35%;
+	background-color:white;
+	padding: 60px;
+	margin: 0 0 0 100px;
+	border-radius: 5px;
+}
+
+.menu-bar *{
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 0.1;
+	font-size: 10px;
+	padding: 10px 40px 10px 40px;
+}
+
+.menu-bar{
+	clear: left;
+}
+/* Explore Styles*/
+
+.song-explore .rating{
+	display: inline;
+}
+
+.song-explore{
+	margin-bottom: 46px;
+}
+
+.map {
+	margin-bottom: 46px;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid grey;
+}
+
+/*.play-button {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: grey;
+}*/
+
+.rating {
+	margin: 0;
+	float:left;
+	align-content: center;
+	margin-right:20px;
+}
+
+.thumbnail{
+	width: 20%;
+	height: 60px;
+	float:left;
+	margin: 0;
+	margin-right:20px;
+	content: url('https://puu.sh/xmmgl/40a0bc382e.png');
+}
+
+.song-title{
+	font-size:16px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.song-date{
+	font-size:8px;
+	text-transform: uppercase;
+}
+
+.by-user{
+	font-size: 12px;
+	color:pink;
+	margin-bottom:10px;
+}
