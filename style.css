@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5 {
 h1{
 	font-size: 10em;
 	color: white;
+	text-transform: lowercase;
 }
 
 h2{
@@ -55,16 +56,27 @@ body{
 	border-radius: 5px;
 }
 
+.menu-bar{
+	clear: left;
+	display: flex;
+}
+
 .menu-bar *{
 	display: inline;
 	text-transform: uppercase;
 	letter-spacing: 0.1;
 	font-size: 10px;
 	padding: 10px 40px 10px 40px;
+	align-content: center;
+	flex-basis: 100%;
 }
 
-.menu-bar{
-	clear: left;
+form{
+	margin-bottom: 46px;
+}
+
+.playlist{
+	margin-bottom: 64px;
 }
 /* Explore Styles*/
 
@@ -111,13 +123,13 @@ body{
 	margin-right:20px;
 }
 
-.thumbnail{
-	width: 20%;
-	height: 60px;
-	float:left;
+.thumbnail img{
+	width: 100%;
+	/*height: 60px;*/
+	/*float:left;*/
 	margin: 0;
-	margin-right:20px;
-	content: url('https://puu.sh/xmmgl/40a0bc382e.png');
+	/*margin-left:20px;*/
+/*	content: url('https://puu.sh/xmmgl/40a0bc382e.png');*/
 }
 
 .song-title{
@@ -135,4 +147,65 @@ body{
 	font-size: 12px;
 	color:pink;
 	margin-bottom:10px;
+}
+
+/*Search Styles*/
+
+.menu-top {
+	clear: left;
+	display: flex;
+	margin-bottom: 46px;
+}
+
+.menu-top *{
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 0.1;
+	font-size: 10px;
+	padding: 10px 40px 10px 40px;
+	align-content: center;
+	flex-basis: 100%;
+}
+
+/*.add-song{
+	float:left;
+}*/
+
+.playlist {
+	padding-left: 0;
+}
+
+.playlist li.song {
+	display: flex;
+}
+
+.playlist li.song .add-song {
+	width: 5%;
+}
+
+.playlist li.song .thumbnail {
+	width: 100px;
+	margin-right: 20px;
+}
+
+.playlist li.song .song-details {
+	flex-grow: 1;
+}
+
+/* Profile Style */
+
+.profile-picture img{
+	width: 100px;
+	box-shadow: 10px 10px 10px #f6f6f6;
+	border-radius: 100px;
+}
+
+.location{
+	font-size: 12px;
+	color:#A4A4A4;
+}
+
+.disable-location{
+	font-size: 12px;
+	color: pink;
 }
