@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5 {
 
 h1{
 	/*font-size: 10em;*/
+	font-size: 5em;
 	color: white;
 	text-transform: lowercase;
 }
@@ -22,6 +23,7 @@ h2{
 	text-transform: uppercase;
 	font-weight: 100;
 	color: white;
+	letter-spacing: 1px;
 }
 
 p{
@@ -37,6 +39,7 @@ body{
 	background-size: cover;
 	display: flex;
 	padding: 100px 100px 0 100px;
+	align-items: center;
 }
 
 
@@ -56,6 +59,8 @@ body{
 }
 
 .player {
+	overflow: scroll;
+	height: 600px;
 	order: -1;
 	flex-shrink: 4;
 	width: 50%;
@@ -86,13 +91,6 @@ form{
 }
 /* Explore Styles*/
 
-.song-explore .rating{
-	display: inline;
-}
-
-.song-explore{
-	margin-bottom: 46px;
-}
 
 .map {
 	margin-bottom: 46px;
@@ -101,18 +99,18 @@ form{
 .arrow-up {
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid black;
   margin-bottom: 10px;
 }
 
 .arrow-down {
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid grey;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #D8D8D8;
   margin-top: 10px;
 }
 
@@ -131,6 +129,11 @@ form{
 	align-items: center;
 }
 
+.score{
+	font-weight: bold;
+}
+
+
 .thumbnail iframe{
 	width: 100%;
 	height: 60px;
@@ -147,7 +150,8 @@ form{
 }
 
 .song-date{
-	font-size:8px;
+	font-size: 10px;
+	color: #A2A2A2;
 	text-transform: uppercase;
 }
 
@@ -159,7 +163,7 @@ form{
 
 /*Search Styles*/
 
-.menu-top {
+/*.menu-top {
 	clear: left;
 	display: flex;
 	margin-bottom: 46px;
@@ -172,7 +176,7 @@ form{
 	font-size: 10px;
 	align-content: center;
 	flex-basis: 100%;
-}
+}*/
 
 /*.add-song{
 	float:left;
@@ -184,6 +188,7 @@ form{
 
 .playlist li.song {
 	display: flex;
+	margin-bottom: 20px;
 }
 
 .playlist li.song .add-song {
