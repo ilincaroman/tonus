@@ -1,5 +1,5 @@
 function img_find() {
-    $.get("http://apophenia--pareidolia.tumblr.com/", function(data, status){
+    $.get("https://www.google.ro/search?q=serene&source=lnms&tbm=isch&sa=X&ved=0ahUKEwil8LGxmP3VAhVFQZoKHWL3DccQ_AUICigB&biw=1440&bih=777&dpr=2", function(data, status){
         alert("Data: " + data + "\nStatus: " + status);
     });
     // var imgs = document.getElementsByTagName("img");

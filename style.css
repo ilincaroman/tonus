@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5 {
 
 h1{
 	/*font-size: 10em;*/
-	font-size: 6em;
+	font-size: 5em;
 	color: white;
 	text-transform: lowercase;
 }
@@ -43,20 +43,12 @@ body{
 }
 
 
-.facebook-login{
-	background-color: blue;
-	text-align: center;
-	font-family: Helvetica, Arial;
-	color: white;
-	width: 300px;
-	padding: 20px 50px 20px 50px;
-}
-
 .tonus-entry {
 	flex-grow: 1;
 	flex-shrink: 20;
 	/*margin: 0 100px 0 0;*/
 }
+
 
 
 .player {
@@ -79,6 +71,7 @@ body{
 	left: 40px;
 	right: 40px;
 	height: 30px;
+	/*box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 .menu-bar div {
@@ -87,6 +80,48 @@ body{
 	font-size: 10px;
 	margin: 0 auto;
 	align-content: center;
+	border-top-width: 10px;
+	border-top-color: black;
+}
+
+.menu-explore{
+	display:flex;
+}
+
+.menu-explore * {
+	vertical-align: middle;
+}
+
+.menu-explore img {
+	height: 15px;
+	margin-right: 10px;
+	padding-bottom: 2px;
+}
+
+
+.menu-add-song * {
+	vertical-align: middle;
+}
+.menu-add-song * {
+	vertical-align: middle;
+}
+.menu-add-song img {
+	height: 15px;
+	margin-right: 10px;
+	padding-bottom: 2px;
+}
+
+
+.menu-profile * {
+	vertical-align: middle;
+}
+.menu-profile * {
+	vertical-align: middle;
+}
+.menu-profile img {
+	height: 15px;
+	margin-right: 10px;
+	padding-bottom: 2px;
 }
 
 form{
@@ -148,9 +183,9 @@ form{
 }
 
 .song-title{
-	font-size:16px;
+	font-size:14px;
 	font-weight: 800;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 	overflow:hidden;
     text-overflow:ellipsis;
 }
@@ -163,10 +198,13 @@ form{
 
 .by-user{
 	font-size: 12px;
-	color: pink;
-	margin-bottom: 12px;
+	color: #A2A2A2;
+	margin-bottom: 8px;
 }
 
+.by-user:hover{
+	color:pink;
+}
 /*Search Styles*/
 
 .playlist {
@@ -175,9 +213,13 @@ form{
 	overflow: scroll;
 }
 
+li.song:hover {
+	background-color: #F9F9F9;
+}
 .playlist li.song {
 	display: flex;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
+	padding: 10px 20px;
 }
 
 .playlist li.song .add-song {
@@ -222,14 +264,14 @@ form{
 	margin-bottom: 4px;
 }
 
-.disable-location{
+.logout{
 	font-size: 12px;
 	color: pink;
 }
 
 /*Media Queries FTW*/
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 901px) {
     /* For mobile phones: */
     body{
     	flex-direction: column-reverse;
@@ -251,3 +293,58 @@ form{
     	margin-bottom: 46px;
     }
 }
+
+/* Accent for different pages on menu bar*/
+.explore ~ .menu-bar .menu-explore a{
+	color: #171717;
+	font-weight: bold;
+}
+
+.add-song ~ .menu-bar .menu-add-song a{
+	color: #171717;
+	font-weight: bold;
+}
+
+.profile ~ .menu-bar .menu-profile a{
+	color: #171717;
+	font-weight: bold;
+}
+/*
+#index .player {
+	background-color: transparent;
+	box-shadow: none;
+
+	padding: 0;
+}
+*/
+#index {
+	display: flex;
+	flex-direction: column-reverse;
+	margin-top: 140px;
+}
+
+
+#index .player {
+	margin: 0 auto;
+	height: 0;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+#index .tonus-entry {
+	margin: 0 auto;
+	/*margin-bottom: 10px;*/
+}
+
+#index .facebook-login{
+	background-color: blue;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	color: white;
+	width: 300px;
+	padding: 20px 50px 20px 50px;
+	margin:0 auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1), 0 16px 10px rgba(0, 0, 0, 0.1);
+}
+
